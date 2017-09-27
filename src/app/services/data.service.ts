@@ -10,7 +10,6 @@ export class DataService {
   }
 
   getUsers() {
-    return this.http.get('http://localhost:4567/all/users').map(res => res.json()); //todo: update link
-    // return this.http.get('https://jsonplaceholder.typicode.com/posts').map(res => res.json());
+    return this.http.get('http://localhost:4567/all/users').map(res => res.json());
   }
 }
