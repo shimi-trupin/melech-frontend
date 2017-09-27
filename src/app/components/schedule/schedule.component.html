@@ -1,0 +1,15 @@
+<p>
+  schedule works!
+</p>
+<h1>Users</h1>
+<div *ngFor = "let user of users">
+  <!--<p>{{user}}</p>-->
+  <h4>{{user.name}}</h4>
+  <p>id: {{user.id}}</p>
+  <ul>
+    <li>address: {{user.address}}</li>
+    <li>status: {{user.status}}</li>
+    <li>sqaudron: {{user.squadron}}</li>
+    <li>user_type: {{user.user_type}}</li>
+  </ul>
+</div>
