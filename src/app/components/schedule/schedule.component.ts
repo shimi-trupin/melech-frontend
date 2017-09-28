@@ -17,7 +17,7 @@ export class ScheduleComponent implements OnInit {
       this.users = users;
     });
     /*this.dataService.getUsers().subscribe((schedules) => {
-      this.schedules = schedules; //todo: get list of schedules per person from server
+      this.schedules = schedules; // todo: get list of schedules per person from server
     });*/
   }
 
