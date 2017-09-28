@@ -1,0 +1,17 @@
+.page-title {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-wrap {
+  width: 620px;
+  margin: 50px auto 0;
+}
+
+.rtl {
+  direction: rtl;
+}
+ .inline-block {
+   display: inline-block;
+ }

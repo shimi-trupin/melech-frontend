@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="page-title">
+    <h1>מסך ניהול פעילות</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="form-wrap">
+    <div class="pull-right text-right" style="width: 250px">
+      <div class="form-group">
+        <label >פילטר</label>
+        <input type="text" class="form-control rtl" placeholder="חפש">
+      </div>
+    </div>
+    <div class="pull-left text-right">
+      <div class="form-group inline-block"  style="width: 150px">
+        <label>מיין לפי</label>
+        <input type="text" class="form-control rtl" placeholder="חפש">
+      </div>
+      <div class="form-group inline-block" style="width: 150px">
+        <label>סוג תצוגה</label>
+        <input type="text" class="form-control rtl" placeholder="חפש">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <app-gant-chart [data]="myData"></app-gant-chart>
+</div>
