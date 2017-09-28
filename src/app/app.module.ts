@@ -8,6 +8,7 @@ import {ShcedulerComponent} from './shceduler/shceduler.component';
 import {AddActivityComponent} from './add-activity/add-activity.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {GantChartComponent} from './gant-chart/gant-chart.component';
+import {GanttModule} from './gantt.module';
 import {DataStorageService} from './shared/data-storage.service';
 
 @NgModule({
@@ -20,6 +21,8 @@ import {DataStorageService} from './shared/data-storage.service';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    GanttModule,
     HttpClientModule,
     AppRoutingModule
   ],

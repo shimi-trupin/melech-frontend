@@ -23,6 +23,7 @@
     "@angular/router": "^4.2.4",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "daypilot-pro-angular": "https://npm.daypilot.org/daypilot-pro-angular/trial/8.3.2869.tar.gz",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
