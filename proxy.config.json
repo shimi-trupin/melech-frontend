@@ -1,0 +1,9 @@
+{
+  "/int": {
+    "target": "http://localhost:4567/",
+    "secure": false,
+    "pathRewrite": {
+      "^/int": ""
+    }
+  }
+}
