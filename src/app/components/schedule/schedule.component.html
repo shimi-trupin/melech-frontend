@@ -2,8 +2,8 @@
   schedule works!
 </p>
 <h1>Users</h1>
-<div *ngFor = "let user of users">
-  <!--<p>{{user}}</p>-->
+<!--<div *ngFor = "let user of users">
+  &lt;!&ndash;<p>{{user}}</p>&ndash;&gt;
   <h4>{{user.name}}</h4>
   <p>id: {{user.id}}</p>
   <ul>
@@ -12,4 +12,8 @@
     <li>sqaudron: {{user.squadron}}</li>
     <li>user_type: {{user.user_type}}</li>
   </ul>
-</div>
+
+  <app-table-row></app-table-row>
+</div>-->
+<div><app-table-row [schedules]="schedules"></app-table-row></div>
+#todo ngFor per person (schedules per person)

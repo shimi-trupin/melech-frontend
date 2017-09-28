@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 
 import {DataService} from './services/data.service';
-import { TableTimeBlockComponent } from './components/table-time-block/table-time-block.component';
+import { TableCellComponent } from './components/table-cell/table-cell.component';
+import { TableRowComponent } from './components/table-row/table-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScheduleComponent,
-    TableTimeBlockComponent
+    TableCellComponent,
+    TableRowComponent
   ],
   imports: [
     BrowserModule,

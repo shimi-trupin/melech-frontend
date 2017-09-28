@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TableTimeBlockComponent } from './table-time-block.component';
+import { TableCellComponent } from './table-cell.component';
 
-describe('TableTimeBlockComponent', () => {
-  let component: TableTimeBlockComponent;
-  let fixture: ComponentFixture<TableTimeBlockComponent>;
+describe('TableCellComponent', () => {
+  let component: TableCellComponent;
+  let fixture: ComponentFixture<TableCellComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableTimeBlockComponent ]
+      declarations: [ TableCellComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableTimeBlockComponent);
+    fixture = TestBed.createComponent(TableCellComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
