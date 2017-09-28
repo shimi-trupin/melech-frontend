@@ -16,16 +16,17 @@ export class ScheduleComponent implements OnInit {
     this.dataService.getUsers().subscribe((users) => {
       this.users = users;
     });
-    this.dataService.getUsers().subscribe((schedules) => {
+    /*this.dataService.getUsers().subscribe((schedules) => {
       this.schedules = schedules; //todo: get list of schedules per person from server
-    });
+    });*/
   }
 
 }
 
 interface User {
+  _id: number;
+  className: string;
   name: string;
-  id: number;
   mail: string;
   birth_date: string;
   address: string;

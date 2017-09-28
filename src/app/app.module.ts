@@ -8,13 +8,17 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 import {DataService} from './services/data.service';
 import { TableCellComponent } from './components/table-cell/table-cell.component';
 import { TableRowComponent } from './components/table-row/table-row.component';
+import { QualificationsComponent } from './components/qualifications/qualifications.component';
+import { ActivityComponent } from './components/activity/activity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScheduleComponent,
     TableCellComponent,
-    TableRowComponent
+    TableRowComponent,
+    QualificationsComponent,
+    ActivityComponent
   ],
   imports: [
     BrowserModule,
