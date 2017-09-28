@@ -1,6 +1,7 @@
 export class Schedule {
-  name: string;
-  startTime: Date;
-  endTime: Date;
+  schedual_name: string;
+  startTime: string;
+  endTime: string;
   userName: string;
+  schedule_type: string;
 }

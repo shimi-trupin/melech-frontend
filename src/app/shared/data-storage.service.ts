@@ -23,5 +23,10 @@ export class DataStorageService {
     );*/
     // return this.http.get(isLocal ? '/int/all/users' : 'http://localhost:4567/all/users').map(res => res.json());
   }
+  getUsers() {
+    return this.httpClient.get<Schedule[]>(isLocal ? '/int/all/users' : 'http://localhost:4567/all/schedules', {
+      responseType: 'json'
+    });
+  }
 
 }

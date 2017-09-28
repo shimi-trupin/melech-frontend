@@ -11,6 +11,7 @@ export class ShcedulerComponent implements OnInit {
 
   // myData: any;
   schedules: Schedule[];
+  // users:
 
   @Input() userSchdules;
 
@@ -20,33 +21,10 @@ export class ShcedulerComponent implements OnInit {
     this.dataStorageService.getSchedules().subscribe((schedules => {
       this.schedules = schedules;
     }));
-    /*[
-      {
-        userName: 'Tal Levi',
-        userSchdules: [
-          {
-            startTime: new Date(),
-            endTime: new Date(),
-            name: 'Clear Tashlat'
-          },
-          {
-            startTime: new Date(),
-            endTime: new Date(),
-            name: 'Clear Tashlat'
-          },
-          {
-            startTime: new Date(),
-            endTime: new Date(),
-            name: 'Clear Tashlat'
-          },
-          {
-            startTime: new Date(),
-            endTime: new Date(),
-            name: 'Clear Tashlat'
-          }
-        ]
-      }
-    ];*/
+
+    this.dataStorageService.getUsers().subscribe((schedules => {
+      this.schedules = schedules;
+    }));
   }
 
 }
