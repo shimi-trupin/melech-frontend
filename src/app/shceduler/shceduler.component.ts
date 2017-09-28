@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, NgZone, OnInit} from '@angular/core';
 import { DataStorageService} from '../shared/data-storage.service';
 import { Schedule } from '../classes/shcedule-model';
 import {User} from "../classes/user-model";
@@ -16,7 +16,8 @@ export class ShcedulerComponent implements OnInit {
 
   @Input() userSchedules;
 
-  constructor(private dataStorageService: DataStorageService) { }
+  constructor(private dataStorageService: DataStorageService,
+              private zone: NgZone) { }
 
   ngOnInit() {
     this.dataStorageService.getSchedules().subscribe((schedules => {
@@ -28,4 +29,10 @@ export class ShcedulerComponent implements OnInit {
     }));
   }
 
+  reschedule() {
+    this.dataStorageService.getReschedule().subscribe();
+    this.zone.runOutsideAngular(() => {
+      location.reload();
+    });
+  }
 }

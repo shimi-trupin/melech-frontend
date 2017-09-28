@@ -30,4 +30,8 @@ export class DataStorageService {
     });
   }
 
+  getReschedule() {
+    console.log('trying to reschedule...');
+    return this.httpClient.get(isLocal ? '/int/all/users' : 'http://localhost:4567/reschedule');
+  }
 }
