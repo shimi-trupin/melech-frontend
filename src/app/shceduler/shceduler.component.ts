@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { DataStorageService} from '../shared/data-storage.service';
 import { Schedule } from '../classes/shcedule-model';
+import {User} from "../classes/user-model";
 
 @Component({
   selector: 'app-shceduler',
@@ -11,9 +12,9 @@ export class ShcedulerComponent implements OnInit {
 
   // myData: any;
   schedules: Schedule[];
-  // users:
+  users: User[];
 
-  @Input() userSchdules;
+  @Input() userSchedules;
 
   constructor(private dataStorageService: DataStorageService) { }
 
@@ -22,8 +23,8 @@ export class ShcedulerComponent implements OnInit {
       this.schedules = schedules;
     }));
 
-    this.dataStorageService.getUsers().subscribe((schedules => {
-      this.schedules = schedules;
+    this.dataStorageService.getUsers().subscribe((users => {
+      this.users = users;
     }));
   }
 
